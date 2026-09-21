@@ -25,9 +25,6 @@ pros::Motor RF (RF_PORT, pros::E_MOTOR_GEARSET_06, false); //keep
 pros::Motor RM (RM_PORT, pros::E_MOTOR_GEARSET_06, false); //keep
 pros::Motor RB (RB_PORT, pros::E_MOTOR_GEARSET_06, false); //keep                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-pros::Motor Intake (Intake_port, pros::E_MOTOR_GEARSET_06, true);
-pros::Motor LadyBrown (LadyBrown_PORT, pros::E_MOTOR_GEARSET_18, true);
-
 pros::Imu imu(IMU_PORT);
 pros::Optical eyes(OPTICAL_PORT);
 pros::Rotation roto(ROTATION_PORT);
@@ -35,7 +32,7 @@ pros::Distance dis (DISTANCE_PORT);
 pros::Controller con (pros::E_CONTROLLER_MASTER);
 
 
-pros::ADIDigitalOut MogoMech ('B',false);//out soloniod was stolen so I changed this
-pros::ADIDigitalOut StakeWing('A',false);
-pros::ADIDigitalOut Intake_Piston ('A',false);
-pros::ADIDigitalIn selec ('C');//
+// pros::ADIDigitalOut MogoMech ('B',false);//out soloniod was stolen so I changed this
+// pros::ADIDigitalOut StakeWing('A',false);
+// pros::ADIDigitalOut Intake_Piston ('A',false);
+// pros::ADIDigitalIn selec ('C');//

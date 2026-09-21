@@ -912,7 +912,8 @@ void driveStraightRush(int target) {
 
     double x = 0;
     x = double(abs(target));
-    timeout = (-0.000000000000750853* pow(x,5)) + (  0.00000000378468 * pow(x,4)) + (-0.00000629527 * pow(x,3)) + (0.00422834* pow(x,2)) + (-0.665814 * x) + 707.21366;    double voltage;
+    timeout = (-0.000000000000750853* pow(x,5)) + (  0.00000000378468 * pow(x,4)) + (-0.00000629527 * pow(x,3)) + (0.00422834* pow(x,2)) + (-0.665814 * x) + 707.21366;   
+    double voltage;
     double encoderAVG;
     int count = 0;
    // double init_heading = imu.get_heading();
@@ -1166,7 +1167,7 @@ if(trueTarget > 180) {
         }
 
         if(abs((target - position)) < clampDistance){
-            MogoMech.set_value(true); // mabye reveres this?
+            // MogoMech.set_value(true); // mabye reveres this?
         }
 
         chasMove((voltage + headingError), (voltage + headingError), (voltage + headingError), (voltage - headingError), (voltage - headingError),(voltage - headingError));
@@ -1264,7 +1265,7 @@ if(trueTarget > 180) {
         }
 
   if(abs(target - encoderAVG) < clampDistanceFromTarget){
-     MogoMech.set_value(true); // mabye reveres this?
+     // MogoMech.set_value(true); // mabye reveres this?
         }
 
         chasMove((voltage + headingError), (voltage + headingError), (voltage + headingError), (voltage - headingError), (voltage - headingError),(voltage - headingError));
